@@ -1,4 +1,0 @@
-vt
-==
-
-Vikas Transline

@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'curvyFontR';
+  src:url('Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'curvyFontB';
+  src:url('Nunito/Nunito-Bold.ttf');
+}
+
+*{
+  font-family: 'curvyFontR';
+}
+
+@font-face
+{
+  font-family: 'icomoon';
+  src:url('icomoon/indiayouthsoccer.eot?-4wr1dg');
+  src:url('icomoon/indiayouthsoccer.eot?#iefix-4wr1dg') format('embedded-opentype'),
+    url('icomoon/indiayouthsoccer.woff?-4wr1dg') format('woff'),
+    url('icomoon/indiayouthsoccer.ttf?-4wr1dg') format('truetype'),
+    url('icomoon/indiayouthsoccer.svg?-4wr1dg#icomoon') format('svg');
+  font-weight:normal;
+  font-style:normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:optimizeLegibility;
+  }
+
+body{
+	max-height: 100%;
+	overflow: hidden;
+	  margin: 0;
+  padding: 0;
+  width: 100%;
+    background: url('../img/bg21.jpg') no-repeat fixed;
+
+}
+body > section{
+}
+span.da-img:before{
+  content: '\e685';
+  font-family: 'icomoon';
+  font-size: 48px;
+  color:#fff;
+      text-shadow:0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+#ball{
+   -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+h1 { 
+  font-weight:normal;
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*= SLIDE 1
+--------------------------------------------------------*/
+#slide1 #slide1-over .text ul{
+  height: 200px;
+}
+
+#slide1 #slide1-over .text ul li{
+
+  display: inline-block;
+  width: 28%;
+  font-size: 22px;
+  padding: 50px 21px;
+  text-align: center;
+  color: #22657D;
+  vertical-align: middle;
+}
+#slide1 #slide1-over .content .text{
+width: 100%;
+float: left;
+}
+#slide1 #slide1-over h1{
+     text-shadow:1px 1px 3px rgba(0, 0, 0, 0.8);
+   margin:100px auto;  
+   color:#EA803D;
+   cursor:pointer;
+   transition:all 0.3s ease-in-out;
+}
+
+#slide1 #slide1-over .content .text p{
+
+     margin-bottom: 27px;
+     font-size: 18px;
+   line-height:1.8em;
+     color: #fff;
+     text-align: center;
+     text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#slide1-over .content{width:85%; margin:auto;}
+
+.da-img{
+     width: 50px;
+     height: 50px;
+     display: block;
+   z-index:10;
+     margin: 2em auto 0.3em;
+       margin-top:100px;
+
+
+} 
+ 
+ .da-link {
+     display: block;
+     color: #fff;
+     text-transform: uppercase;
+     margin: 0 auto;
+     width: 140px;
+     text-align: center;
+     padding: 7px 12px 5px;
+     font-size: 16px;
+   border:3px solid #00855C;
+   border-radius:3px;
+}
+ .da-link:hover
+{
+     color:#EDEDB8;
+   border-color:#EDEDB8;
+}
+
+#slide1{
+  width: 100%;
+  float: left;
+  padding: 120px 0px 50px;
+     position: relative;
+}
+#slide1{
+  width:100%;
+  height:700px;
+  position:relative;
+}
+
+
+#slide1 #slide1-over{
+  position:absolute;
+  top:0; left:0; bottom:0; right:0;
+  background:rgba(18, 11, 5, 0.4);
+  padding: 30px 0px 50px;
+}
+
+/*= Selection List 
+--------------------------------------------------------*/
+#slide1 #slide1-over .content .selection_wrapper{
+width: 100%;
+float: left;
+margin: 30px auto;
+}
+.selection_wrapper ul{
+	float: left;
+}
+.selection_wrapper ul li{
+	display: inline-block;
+	list-style: none;
+	float: left;
+	max-width: 20%;
+	height: 250px;
+	background: rgba(255,255,255,0.6);
+	margin-left: 10%;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 4%;
+	overflow: hidden;
+	box-shadow: 0px 1px 5px #000;
+}
+.selection_wrapper ul li img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.selection_wrapper ul li h2{
+	text-align: center;
+	padding:10px 0px;
+	margin-top: -5px;
+	box-shadow: 0px 2px 2px rgba(0,0,0,1);
+}
+.selection_wrapper ul li footer{
+	text-align: center;
+}
+
+#orange{
+	background: rgba(220,146,78,0.5);
+	border: 2px solid rgba(220,146,78,1);
+}
+
+#orange h2{
+background: rgba(220,146,78,1);
+color:#905824;
+}
+
+/* Don't show shadows when selecting text */
+::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+::selection { background: #5af; color: #fff; text-shadow: none; }
+
+#blue{
+	background: rgba(128,157,180,0.5);
+	border: 2px solid rgba(128,157,180,1);
+}
+#blue h2{
+	background: rgba(128,157,180,1);
+	color: #4A5A68;
+}
+
+#green{
+	background: rgba(53,118,86,0.5);
+	border: 2px solid rgba(53,118,86,1);
+}
+
+#green h2{
+	background: rgba(53,118,86,1);
+	color: #1E4331;
+}
+
+.selection_wrapper a{
+	text-decoration: none;
+	color:#ddd;
+}
+.selection_wrapper h2{
+	color: #eee;
+}
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  {   font-size: 18px; text-align: center; clear: both; background: #26282B; padding:20px 0; }
+#copyright  a { text-decoration: none; color:#dfdfdf !important; }

@@ -4,7 +4,6 @@
 	<title>IYSA</title>
 	<!-- LOADING CSS -->
 	<link rel="shortcut icon" href="img/logo.gif">       
-	<link rel="stylesheet" type="text/css" href="css/demo.c+ss" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -17,13 +16,17 @@
 	</head>
 
 	<body>
+	<ul class="extras">
+		<li><span class="fb"></span></li>
+		<li><span class="chat"></span></li>
+		<li><span class="forum"></span></li>
+	</ul>
 	<section>
 		<article id="slide1">
 			<div id="slide1-over">
 				<div class="content">
 					<div class="text">
 						<h1>India Youth Soccer </h1>
-<!-- 						<a href="" class="scroll"><span class="da-img bounce" id="ball"> </span> </a> -->
 					</div>
 					<div class="selection_wrapper">
 						<ul class="selection_list">
@@ -65,6 +68,21 @@
 				</div> 
 			</div>
 		</article> 
-	</section>		
+	</section>
+	<script type="text/javascript" charset="utf-8" async defer>
+ 		$(document).ready(function() {
+ 			$('.selection_wrapper ul li').hover(function() {
+ 				/* Stuff to do when the mouse enters the element */
+ 				var shake = $(this).find('img');
+ 				$(shake).addClass('animated');
+ 				$(shake).addClass('swing');
+ 			}, function(el) {
+ 				/* Stuff to do when the mouse leaves the element */
+ 				var shake = $(this).find('img');
+ 				$(shake).removeClass('animated');
+ 				$(shake).removeClass('swing');
+ 			});
+ 		});
+	</script>	
 	</body>
 	</html>
